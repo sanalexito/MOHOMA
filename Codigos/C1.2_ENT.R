@@ -1,6 +1,8 @@
 #Datos desagregados por entidad
 #rm(list=ls())
 library(survey)
+source("D:/MOHOMA/Calculadores/funcs.R")
+source("D:/MOHOMA/Calculadores/Tab_2.R")
 ##########################################################################################
 t7<-t7[t7$foliohog%in%1 & t7$ap_1%in%1,]
 ##########################################################################################
