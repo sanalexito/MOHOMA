@@ -10,6 +10,8 @@ Lo primero que se debe hacer es correr el código que aparece en "dscrg_base_MOH
 De igual manera aparecerán las bases en formato CSV en la carpeta "Bases_mohoma". Nótese que todos los archivos se guardan en la unidad D.
 Si lo consideran necesario solo cambian la ubicación a la unidad C.
 
-Posteriormente se corren los scripts que generan los cuadros correspondientes y que se ubican en la carpeta "Codigos". Los cuadros que se generan son "Cuadro 1" y "Cuadro 2", así como sus desagregaciones por entidad federativa.
+Posteriormente se corren los scripts que generan los cuadros correspondientes y que se ubican en la carpeta "Codigos". Los cuadros que se generan son "Cuadro 1" y "Cuadro 2", así como sus desagregaciones por entidad federativa. Si es que se quieren guardar los resultados se sugiere usar la carpeta "Tablas" y dar la ruta correspondiente con la instrucción
+
+write.csv(est,"D:/MOMOHA/Tablas/C1.1_ENT.csv")
 
 
