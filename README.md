@@ -1,5 +1,5 @@
 # MOHOMA
-Se presenta el código para calcular las estimaciones del servicio de agua en los hogares de México que provienen del Módulo de Hogares y Medio Ambiente 2017.
+Se presenta el código para calcular las estimaciones del servicio de agua en los hogares de México que provienen del Módulo de Hogares y Medio Ambiente (MOHOMA) 2017.
 
 Se incluyen las funciones necesarias (archivo llamado funcs.R y Tab_2.R) para obtener los resultados publicados por el INEGI, con la novedad de que se presentan las estimaciones de totales que no se incluyen en los tabulados básicos de dicha institución.
 
