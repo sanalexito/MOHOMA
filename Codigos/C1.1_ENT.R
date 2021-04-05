@@ -1,6 +1,8 @@
 #Datos desagregados por entidad
 #rm(list=ls())
 library(survey)
+source("D:/MOHOMA/Calculadores/funcs.R")
+source("D:/MOHOMA/Calculadores/Tab_2.R")
 
 ##########################################################################################
 #z<-c("Lectura de medidor", "Cuota fija","No pagan el agua","No sabe")
