@@ -5,7 +5,7 @@ library(survey)
 source("D:/MOHOMA/Calculadores/funcs.R")
 source("D:/MOHOMA/Calculadores/Tab_2.R")
 ##########################################################################################
-#z<-c("Lectura de medidor", "Cuota fija","No pagan el agua","No sabe")
+#Los datos corresponden a "Con servicio de agua" y "Sin servicio de agua", respectivamente.
 z<-c("Localidades con menos de 2 500 habitantes","Localidades de 2500 o más habitantes")
 t7$TOT<-ifelse(!t7$factor%in%NA & t7$foliohog%in%1,t7$factor,0)
 t7$TOT_1<-ifelse(t7$ap_1%in%1 & t7$foliohog%in%1,t7$factor,0)
