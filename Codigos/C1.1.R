@@ -1,8 +1,9 @@
-# Tiene lo de la reclasificación de la 5.4
+# Información del Cuadro 1.1 del Apartado A del MOHOMA 2017.
 
 #rm(list=ls())
 library(survey)
-
+source("D:/MOHOMA/Calculadores/funcs.R")
+source("D:/MOHOMA/Calculadores/Tab_2.R")
 ##########################################################################################
 #z<-c("Lectura de medidor", "Cuota fija","No pagan el agua","No sabe")
 z<-c("Localidades con menos de 2 500 habitantes","Localidades de 2500 o más habitantes")
