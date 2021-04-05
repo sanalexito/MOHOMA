@@ -7,5 +7,5 @@ Es necesario tener la carpeta general llamada "MOHOMA" en donde se almacenarán 
 Carpetas que deben crearse en MOHOMA: "Bases_mohoma", "Calculadores" y "Codigos"
                             
 Lo primero que se debe hacer es correr el código que aparece en "dscrg_base_MOHOMA". Esto nos va a descargar el ZIP de las bases de datos en "MOHOMA".
-De igual manera aparecerán las bases en formato CSV en la carpeta "Bases_mohoma". Nótese que los archivos en este caso todos se guardan en la unidad D.
+De igual manera aparecerán las bases en formato CSV en la carpeta "Bases_mohoma". Nótese que todos los archivos se guardan en la unidad D.
 Si lo consideran necesario solo cambian la ubicación a la unidad C.
