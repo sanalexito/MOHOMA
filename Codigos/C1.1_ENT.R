@@ -1,6 +1,4 @@
 #Datos desagregados por entidad
-# Tiene lo de la reclasificación de la 5.4
-
 #rm(list=ls())
 library(survey)
 
