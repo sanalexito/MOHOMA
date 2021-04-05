@@ -23,6 +23,21 @@ Prec_Des<-function(TOT,asp,D)
 ",sep="")))
 }
 
+#No jaló definiendo la función de forma usual así que puse una función para cada variable.
+#Rara vez aparecen más de once características en un mismo tabulado
+for(j in 1:11)
+{eval(parse(text = paste(" 
+                         Prec_Des",j,"<-function(TOT_",j," ,asp, D){
+                         
+                         x",j,"<-svyby(~TOT_",j,",by=~D,asp,svytotal)
+                         
+                         Prec_Des",j,"<-data.frame(x",j,"[2],cv(x",j,")*100,confint(x",j,",level=0.9),SE(x",j,"))
+                         colnames(Prec_Des",j,")<-c(\"relativo\",\"CV relativo\",\"intervalo de\",\"confianza\",\"SE\")
+                         
+                         return(Prec_Des",j,")
+                         }
+                         ",sep="")))}
+
 ##Prec_Des(t7$TOT,asp,t7$DESAG)
 ######################################################################################
 Rel<-function(x,y,asp){
