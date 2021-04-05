@@ -15,7 +15,10 @@ tviv<-read.csv("D:/MOMOHA/bases_mohoma/vivienda.csv")
 t7<-merge(t7,tviv[,c("folioviv","upm")])
 
 #Ahora se define la variable entidad si es que se utiliza.
-t7$ENT<-ifelse(nchar(t7$folioviv)==9, substr(t7$folioviv,1,1),substr(t7$folioviv,1,2))
+t7$entidad<-ifelse(nchar(t7$folioviv)==9, substr(t7$folioviv,1,1),substr(t7$folioviv,1,2))
+for(i in 1:32){
+t7[t7$entidad%in%i,"ENT"]<-i}
+
 t7$UPM<-t7$upm #esta es una copia de la variable upm
 
 #Se arma la varible estrato y se reclasifica como Rural y Urbano
