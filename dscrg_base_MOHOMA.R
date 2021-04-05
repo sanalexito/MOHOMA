@@ -20,7 +20,7 @@ t7$UPM<-t7$upm #esta es una copia de la variable upm
 
 #Se arma la varible estrato y se reclasifica como Rural y Urbano
 t7$EST<-substr(t7$folioviv,nchar(t7$folioviv)-7,nchar(t7$folioviv)-7)
-t7$EST_DIS<-ifelse(t7$EST%in%6,"Rural","Urbano")
+t7$EST<-ifelse(t7$EST%in%6,"Rural","Urbano")
 
 #DESAG es la variable por la cual se desagrega 
 #1: localidades con menos de 2500 habitantes; 2: Localidades con más de 2500 habitantes
