@@ -1,12 +1,12 @@
 # MOHOMA
-Se presenta el código para calcular las estimaciones del servicio de agua en los hogares de México que provienen del Módulo de Hogares y Medio Ambiente (MOHOMA) 2017.
+En este repositorio se presenta el código fuente para calcular las estimaciones del servicio de agua en los hogares de México que provienen del Módulo de Hogares y Medio Ambiente (MOHOMA) 2017. Da click en las letras azules que dicen MOHOMA para ver las carpetas.
 
 Se incluyen las funciones necesarias (archivos llamados funcs.R y Tab_2.R) para obtener los resultados publicados por el INEGI, con la novedad de que se presentan las estimaciones de totales que no se incluyen en los tabulados básicos de dicha institución. Si bien la encuesta está diseñada para obtener representatividad a nivel nacional, se lleva a cabo el cálculo por entidad (variable llamada "ENT") que puede emplearse para realizar análisis cualitativos.
 
 Es necesario tener la carpeta general llamada "MOHOMA" en donde se almacenarán los demás archivos. 
 Carpetas que deben crearse en MOHOMA: "Bases_mohoma", "Calculadores" y "Codigos"
                             
-Lo primero que se debe hacer es correr el código que aparece en "dscrg_base_MOHOMA". Esto nos va a descargar el ZIP de las bases de datos en "MOHOMA".
+Lo primero que se debe hacer es correr el código que aparece en "dscrg_base_MOHOMA.R". Esto nos va a descargar el ZIP de las bases de datos en "MOHOMA".
 De igual manera aparecerán las bases en formato CSV en la carpeta "Bases_mohoma". Nótese que todos los archivos se guardan en la unidad D.
 Si lo consideran necesario solo cambian la ubicación a la unidad C.
 
