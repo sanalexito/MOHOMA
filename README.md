@@ -14,4 +14,5 @@ Posteriormente se corren los scripts que generan los cuadros correspondientes y 
 
 write.csv(est,"D:/MOMOHA/Tablas/nombre.csv") 
 
+NOTA: Es posible descargar todo el repositorio dando click arriba en el boton verde y luego pulsar "clone".
 
