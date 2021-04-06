@@ -2,8 +2,8 @@
 
 #rm(list=ls())
 library(survey)
-source("D:/Varios/MOMOHA/Calculadores/funcs.R")
-source("D:/Varios/MOMOHA/Calculadores/Tab_2.R")
+source("D:/MOMOHA/Calculadores/funcs.R")
+source("D:/MOMOHA/Calculadores/Tab_2.R")
 
 ##########################################################################################
 t7<-t7[t7$foliohog%in%1 & t7$ap_1%in%1,]
