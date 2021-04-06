@@ -12,7 +12,7 @@ Si lo consideran necesario solo cambian la ubicación a la unidad C.
 
 Posteriormente se corren los scripts que generan los cuadros correspondientes y que se ubican en la carpeta "Codigos". Los cuadros que se generan son "Cuadro 1" y "Cuadro 2", así como sus desagregaciones por entidad federativa. Si es que se quieren guardar los resultados se sugiere usar la carpeta "Tablas" y dar la ruta correspondiente con la instrucción
 
-write.csv(est,"D:/MOMOHA/Tablas/nombre.csv") 
+openxlsx::write.xlsx(est,"D:/Varios/MOMOHA/Tablas/nombre.xlsx",asTable = T)
 
 NOTA: Es posible descargar todo el repositorio dando click arriba en el boton verde y luego pulsar "clone".
 
