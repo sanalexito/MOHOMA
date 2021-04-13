@@ -15,7 +15,7 @@ Tab_2<-function(TOT,x,D,z) #la variable D es por la que se desagrega.
   #####################################################################
   ent<-Prec_Des(t7$TOT,asp,t7$DESAG) # ent<-Prec_Des(t7$TOT,asp,t7$AMB)
   for(i in 1:length(x))
-    eval(parse(text=paste0("ent_",i,"<-Prec_Des(t7$TOT_",i,",asp,D) ")))
+    eval(parse(text=paste0("ent_",i,"<-Prec_Des",i,"(t7$TOT_",i,",asp,D) ")))
   
   for(i in 1:length(x))
     eval(parse(text=paste0("rel_ent_",i,"<-Rel_Des",i,"(t7$TOT_",i,",t7$TOT,asp,D) ")))
