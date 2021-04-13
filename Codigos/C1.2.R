@@ -16,7 +16,7 @@ t7$TOT_2<-ifelse(t7$ap_1_1%in%2,t7$factor,0)
 t7$TOT_3<-ifelse(t7$ap_1_1%in%3,t7$factor,0)
 t7$TOT_4<-ifelse(t7$ap_1_1%in%9,t7$factor,0)
 source("D:/ECRIGE_CDMX/Calculadores/Tab_2.R")
-asp <- svydesign(id=~folioviv,strata=~EST,data=t7,weights=~1,nest = T)
+asp <- svydesign(id=~upm,strata=~EST,data=t7,weights=~1,nest = T)
 bla<-Tab_2(TOT,paste0("TOT_",1:4),t7$DESAG,z)
 
 #####################################################################
