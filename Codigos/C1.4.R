@@ -26,7 +26,7 @@ t7$TOT_1<-ifelse(p1%in%T,t7$factor,0)
 t7$TOT_2<-ifelse(p2%in%T,t7$factor,0)
 t7$TOT_3<-ifelse(p3%in%T,t7$factor,0)
 t7$TOT_4<-ifelse(p4%in%T,t7$factor,0)
-asp <- svydesign(id=~folioviv,strata=~EST,data=t7,weights=~1,nest = T)
+asp <- svydesign(id=~upm,strata=~EST,data=t7,weights=~1,nest = T)
 bla<-Tab_2(TOT,paste0('TOT_',1:4),t7$DESAG,z)
 
 #Desagregaciones
@@ -35,7 +35,7 @@ for(i in 1:length(aa))
   eval(parse(text = paste0("
            t7$TOT_",i,"<-ifelse(t7$ap_1_4_",j,"%in%aa[i],t7$factor,0)
   
-asp <- svydesign(id=~folioviv,strata=~EST,data=t7,weights=~1,nest = T)
+asp <- svydesign(id=~upm,strata=~EST,data=t7,weights=~1,nest = T)
 bla_",j,"<-Tab_2(TOT,paste0('TOT_',1:4),t7$DESAG,z)
 ")))
 
